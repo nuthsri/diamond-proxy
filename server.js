@@ -21,7 +21,7 @@ app.post('/api/search-diamonds', async (req, res) => {
         });
 
         const rawDiamondsData = response.data;
-        const markupPercent = 1.10; // 💡 บวกกำไรให้แบรนด์คุณ 10%
+        const markupPercent = 0.95; // 💡 ถูกกว่า above diamond 5%
         
         if (rawDiamondsData && rawDiamondsData.diamonds) {
             const customizedDiamonds = rawDiamondsData.diamonds.map(diamond => {
